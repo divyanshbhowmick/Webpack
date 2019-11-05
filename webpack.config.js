@@ -13,6 +13,12 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"] // Takes effect from right to left
+      },
+
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
       }
     ]
   }

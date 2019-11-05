@@ -1,4 +1,5 @@
-import notification from "./Notification";
-require('./style.css');
-notification.announce("changed it");
-notification.log("changed it");
+import Notification from "./Notification";
+require("./style.css");
+var notification = new Notification();
+notification.announce("Done with classes");
+notification.log("Done");

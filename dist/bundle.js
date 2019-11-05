@@ -129,7 +129,7 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction announce(message) {\r\n  alert(message);\r\n}\r\n\r\nfunction log(message) {\r\n  console.log(message);\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n  announce: announce,\r\n  log: log\r\n});\r\n\n\n//# sourceURL=webpack:///./src/Notification.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\nvar Notification =\n/*#__PURE__*/\nfunction () {\n  function Notification() {\n    _classCallCheck(this, Notification);\n  }\n\n  _createClass(Notification, [{\n    key: \"announce\",\n    value: function announce(message) {\n      alert(message);\n    }\n  }, {\n    key: \"log\",\n    value: function log(message) {\n      console.log(message);\n    }\n  }]);\n\n  return Notification;\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Notification);\n\n//# sourceURL=webpack:///./src/Notification.js?");
 
 /***/ }),
 
@@ -141,7 +141,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction announce(message) {\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notification */ \"./src/Notification.js\");\n\r\n__webpack_require__(/*! ./style.css */ \"./src/style.css\");\r\n_Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"].announce(\"changed it\");\r\n_Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"].log(\"changed it\");\r\n\n\n//# sourceURL=webpack:///./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Notification__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Notification */ \"./src/Notification.js\");\n\n\n__webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\nvar notification = new _Notification__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\nnotification.announce(\"Done with classes\");\nnotification.log(\"Done\");\n\n//# sourceURL=webpack:///./src/main.js?");
 
 /***/ }),
 
